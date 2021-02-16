@@ -1,0 +1,163 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.6em;
+}
+.shop {
+  color: green;
+}
+
+.s2-text-holder {
+  text-align: center;
+  position: absolute;
+  margin-top: 390px;
+  left: 50%;
+  transform: translate(-55%, -50%);
+}
+
+.s2-main-header {
+  font-size: 4em;
+}
+.s2-paragraph {
+  font-size: 1.1em;
+}
+
+.search-bar {
+  position: absolute;
+  margin-left: 50%;
+  transform: translate(-55%, -50%);
+  margin-top: 600px;
+  font-size: 20px;
+}
+.search-border {
+  width: 600px;
+  height: 30px;
+  font-size: 20px;
+}
+
+.s3-troll {
+  display: flex;
+  justify-content: space-between;
+}
+
+.s3-table {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+}
+
+.s3-tdata {
+  display: flex;
+  border: black solid 2px;
+  width: 28%;
+  height: 240px;
+  padding: 20px;
+  background-color: rgb(241, 140, 157);
+}
+.s3-tdata:nth-child(2) {
+  background-color: rgb(255, 165, 0);
+}
+.s3-tdata:nth-child(3) {
+  background-color: rgba(207, 9, 207, 0.698);
+}
+.s3-img {
+  position: absolute;
+  margin-top: 65px;
+  width: 130px;
+  margin-left: 40px;
+}
+.s3-head {
+  font-size: 24px;
+  color: white;
+}
+.s3-para {
+  font-size: 18px;
+  color: white;
+  width: 100%;
+}
+.s3-btn {
+  box-shadow: 4px 3px 0px;
+  width: 120px;
+  height: 40px;
+  margin-top: 85px;
+}
+.section4 {
+  padding: 30px;
+}
+.s4 {
+  display: flex;
+}
+.s4-tleft {
+  width: 20%;
+}
+.s4-proCatagory {
+  display: flex;
+  font-size: 20px;
+}
+.s4-catIcon {
+  width: 50px;
+  height: 50px;
+}
+
+.s4-tright {
+  justify-content: right;
+}
+
+.s4-proCol {
+  border: black solid 2px;
+  width: 400px;
+  height: 500px;
+}
+.s4-proImg {
+  margin: auto;
+  width: 330px;
+  margin-top: -80px;
+  margin-left: 15px;
+}
+.btnLoad {
+  margin-top: 220px;
+  background-color: green;
+  border-radius: 3px;
+  height: 40px;
+}
+.btncart {
+  margin-left: 250px;
+  margin-bottom: 30px;
+  border: black solid 2px;
+  box-shadow: 4px 3px 0px;
+}
+.s4-discount {
+  border: transparent;
+  background-color: tomato;
+  margin-left: 290px;
+  text-align: center;
+  margin-right: 10px;
+  font-size: 30px;
+  border-radius: 6px;
+}
+.s4-para {
+  margin-top: -30px;
+  line-height: 5px;
+  margin-left: 20px;
+}
+.price-1 {
+  color: red;
+  text-decoration: line-through;
+}
+.price-2 {
+  color: green;
+}
+.price {
+  margin-top: 40px;
+  margin-left: 40px;
+  font-size: 20px;
+  line-height: 10px;
+}

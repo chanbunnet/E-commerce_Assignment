@@ -1,0 +1,75 @@
+<!-- include header -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Application</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+   
+    <main id="site-main">
+      <div class="container">
+        <div class="box-nav d-flex justify-between">
+          <a href="/add-product" class="border-shadow">
+            <span class="text-gradient"
+              >New User <i class="fas fa-user"></i
+            ></span>
+          </a>
+        </div>
+
+        <form action="/" method="POST">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th>Name</th>
+                <th>Qty</th>
+                <th>Detail</th>
+                <th>Instock At</th>
+                <th>Category</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% for(var i = 0; i < users.length; i++) { %>
+              <tr>
+                <td><%= users[i].name %></td>
+                <td><%= users[i].quantity %></td>
+                <td><%= users[i].detail %></td>
+                <td><%= users[i].stock %></td>
+                <td><%= users[i].category %></td>
+                <td>
+                  <a href="/update-product?id=<%= users[i]._id%>" class="btn border-shadow update">
+                    <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+                </a>
+                <a class="btn border-shadow delete" data-id=<%= users[i]._id%> >
+                    <span class="text-gradient"><i class="fas fa-times"></i></span>
+                </a>
+                </td>
+              </tr>
+              <% } %>
+            </tbody>
+          </table>
+        </form>
+      </div>
+    </main>
+    <!-- /Main Site -->
+
+    <!-- include footer -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
+<!-- /include footer -->
